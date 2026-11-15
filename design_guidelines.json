@@ -1,0 +1,191 @@
+{
+  "project_name": "AIB Gattinara - Registro Ore Volontari",
+  "app_type": "saas_app / responsive_dashboard",
+  "target_locale": "it-IT",
+  "context_archetype": "THE PERFORMANCE PRO / EMERGENCY RESCUE (Forest Firefighting + Civil Protection)",
+  "emotional_tone": "Operational, rugged, trustworthy, high-clarity, mission-ready, Italian emergency services authority",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#0D1410",
+        "on_bg": "#F1F5F2",
+        "on_bg_muted": "#9BA89E"
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#141F1A",
+        "on_bg": "#F1F5F2",
+        "on_bg_muted": "#9BA89E"
+      },
+      {
+        "name": "card_elevated",
+        "kind": "solid",
+        "bg": "#1B2A23",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#A2B3A6"
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#F4F7F5",
+        "on_bg": "#0D1410",
+        "on_bg_muted": "#4B5B50"
+      },
+      {
+        "name": "hero_auth",
+        "kind": "image",
+        "contrast_against": "#0A0F0D",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(13,20,16,0.85) 0%, rgba(13,20,16,0.95) 100%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#C2D0C6",
+        "roles": {
+          "link": "#34D399",
+          "error": "#F87171",
+          "success": "#34D399"
+        }
+      },
+      {
+        "name": "badge_aib_forestale",
+        "kind": "solid",
+        "bg": "#143823",
+        "on_bg": "#34D399",
+        "on_bg_muted": "#A7F3D0"
+      },
+      {
+        "name": "badge_protezione_civile",
+        "kind": "solid",
+        "bg": "#3D1E08",
+        "on_bg": "#FB923C",
+        "on_bg_muted": "#FED7AA"
+      },
+      {
+        "name": "badge_approved",
+        "kind": "solid",
+        "bg": "#064E3B",
+        "on_bg": "#A7F3D0",
+        "on_bg_muted": "#6EE7B7"
+      },
+      {
+        "name": "badge_pending",
+        "kind": "solid",
+        "bg": "#451A03",
+        "on_bg": "#FDBA74",
+        "on_bg_muted": "#FED7AA"
+      },
+      {
+        "name": "badge_rejected",
+        "kind": "solid",
+        "bg": "#450A0A",
+        "on_bg": "#FCA5A5",
+        "on_bg_muted": "#FECACA"
+      }
+    ],
+    "accent_aib_green": "#10B981",
+    "accent_aib_green_hover": "#059669",
+    "accent_pc_orange": "#F97316",
+    "accent_pc_orange_hover": "#EA580C",
+    "accent": "#10B981",
+    "on_accent": "#042F1A",
+    "border_subtle": "#22352B",
+    "border_focus": "#10B981"
+  },
+  "typography": {
+    "font_family_import": "@fontsource-variable/outfit",
+    "font_heading": "'Outfit Variable', sans-serif",
+    "font_body": "'Plus Jakarta Sans Variable', sans-serif",
+    "scale_px": {
+      "display": 52,
+      "h1": 40,
+      "h2": 30,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headings": "Outfit Variable, font-bold or font-extrabold with tracking-tight",
+      "labels": "text-xs uppercase tracking-widest font-semibold text-emerald-400/90",
+      "body": "text-base text-zinc-100 leading-relaxed",
+      "metrics": "Outfit Variable, font-black tabular-nums tracking-tight"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split hero — Squadra AIB Gattinara operational summary & quick punch in/out left, live monthly stats & quick registration right",
+    "/login": "branded emergency split screen — squad crest & mission credentials left, volunteer access PIN/password form right",
+    "/register": "branded registration split screen — squad onboarding requirements left, volunteer personal data & role profile form right"
+  },
+  "media": {
+    "image_urls": [
+      {
+        "category": "hero_wildfire_action",
+        "url": "https://images.unsplash.com/photo-1594984820817-d8317f74930c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwzfHxmaXJlZmlnaHRlcnMlMjB3aWxkZmlyZSUyMGZvcmVzdHxlbnwwfHx8fDE3OTQ1Njg0NTd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Squadra AIB in azione antincendio boschivo con tuta e manichette operative"
+      },
+      {
+        "category": "forest_environment",
+        "url": "https://images.unsplash.com/photo-1729904884750-949d50748ff2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxmaXJlZmlnaHRlcnMlMjB3aWxkZmlyZSUyMGZvcmVzdHxlbnwwfHx8fDE3OTQ1Njg0NTd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Sfondo bosco operativo piemontese / prealpi per visual cards di squadra"
+      }
+    ]
+  },
+  "layouts_and_grids": {
+    "mobile_first_strategy": "Bottom operational bar on mobile with quick 'Registra Ore' FAB, large touch target inputs (min 48px), 1-column responsive card feed for phone screens, full collapsible sidebar for desktop admins.",
+    "bento_dashboard": "Desktop: 12-column grid. Column 1-4: Quick summary cards (Total AIB hours, Total Protezione Civile hours, Pending approvals, Volunteer rank). Column 5-12: Interactive hour entry logger + Recent entries feed + monthly breakdown chart.",
+    "admin_control_room": "Dedicated tabs: (1) Approvazione Ore In Attesa, (2) Approvazione Nuovi Volontari, (3) Riepilogo Ore Volontari per Mese/Anno & Export Excel/CSV, (4) Registro Completo con Filtri (Categoria, Tipo Attività, Volontario, Stato), (5) Gestione Volontari & Ruoli Admin."
+  },
+  "motion_and_interactions": {
+    "library": "motion (motion/react)",
+    "micro_interactions": [
+      "Smooth counter tick on total hours increment",
+      "Tactile button press animation on 'Invia Ore' and 'Approva/Rifiuta'",
+      "Badge status color pulse on pending review items",
+      "Slide-in sheet for fast mobile entry logging",
+      "Export Excel button with subtle loading spinner and instant download feedback"
+    ]
+  },
+  "accessibility_and_locale": {
+    "locale": "it-IT",
+    "date_format": "dd/MM/yyyy HH:mm (Italian Standard)",
+    "decimal_separator": ",",
+    "hour_unit": "h (es. 3,5 h)",
+    "test_attributes": "All buttons, inputs, select triggers, approval toggles, and metric cards MUST have explicit kebab-case data-testid (e.g. data-testid='input-date', data-testid='select-category', data-testid='btn-submit-hours', data-testid='btn-approve-entry-123', data-testid='btn-export-excel', data-testid='admin-tab-reports')."
+  },
+  "categories_and_activity_types": {
+    "macro_categories": [
+      {
+        "id": "AIB",
+        "label": "Antincendio Boschivo (AIB)",
+        "color": "emerald",
+        "badge_bg": "#143823",
+        "badge_text": "#34D399",
+        "icon": "Flame"
+      },
+      {
+        "id": "PC",
+        "label": "Protezione Civile",
+        "color": "orange",
+        "badge_bg": "#3D1E08",
+        "badge_text": "#FB923C",
+        "icon": "ShieldAlert"
+      }
+    ],
+    "activity_types": [
+      {"id": "intervento", "label": "Intervento Attivo / Emergenza", "icon": "Siren"},
+      {"id": "avvistamento", "label": "Avvistamento / Pattugliamento", "icon": "Eye"},
+      {"id": "esercitazione", "label": "Esercitazione / Addestramento", "icon": "Activity"},
+      {"id": "formazione", "label": "Formazione / Corsi", "icon": "GraduationCap"},
+      {"id": "manutenzione", "label": "Manutenzione Mezzi / Attrezzature", "icon": "Wrench"},
+      {"id": "sede", "label": "Servizio in Sede / Logistica", "icon": "Building"}
+    ]
+  },
+  "instructions_to_main_agent": [
+    "App must be completely in Italian language with accurate emergency service terminology (Squadra AIB Gattinara, Protezione Civile, Volontario, Caposquadra / Amministratore, Approvato, In Attesa, Rifiutato).",
+    "Mobile-first responsive design is crucial because volunteer firefighters log hours straight from smartphones after returning from fire ops or drills.",
+    "Implement real Excel (.xlsx with openpyxl in backend or SheetJS / CSV) export for monthly hour reports grouped by volunteer and macro-category.",
+    "Ensure pending self-registered users cannot access the app until approved by an admin, with clear 'In attesa di approvazione dal caposquadra' screen.",
+    "Admin dashboard must provide quick 1-click batch and single approve/reject for volunteer hours.",
+    "Include seed data with realistic Gattinara AIB volunteers, past wildfires, patrol drills, maintenance hours, and pending requests."
+  ]
+}
